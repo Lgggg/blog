@@ -4,7 +4,7 @@ import models
 
 manager = Manager(main.app)
 
-manager.add_command("server", Server())
+manager.add_command("server", Server(host='0.0.0.0', port=8080))
 
 @manager.shell
 def make_shell_context():
