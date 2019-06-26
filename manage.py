@@ -12,7 +12,12 @@ def make_shell_context():
     return default imoprt obj
     type: dict
     """
-    return dict(app=main.app, db=models.db, User=models.User)
+    return dict(
+            app  = main.app,
+            db   = models.db,
+            User = models.User,
+            Post = models.Post,
+    )
 
 if __name__ == '__main__':
     manager.run()
