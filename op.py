@@ -64,4 +64,3 @@ db.session.query(Tag).filter_by(name='JmilkFan').first().posts.all()
 pip install Flask-Migrate
 pip freeze > requirements.txt
 
-=========【manager shell】=========
